@@ -2,7 +2,7 @@ pipeline {
     agent {
         docker {
             image 'node:8.16-alpine' 
-            args '-p 3001:3000' 
+            args '-p 3001:3000 --name toto' 
         }
     }
     environment {
